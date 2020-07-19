@@ -3,7 +3,7 @@ const path = require('path');
 const htmlparser = require("htmlparser2");
 const shadyCss = require('shady-css-parser');
 const chalk = require('chalk');
-const logger = require('./logger');
+const logger = require('../util/logger');
 const transform2es5 = require('./transform');
 // const encrypter = require('./encrypt');
 /**

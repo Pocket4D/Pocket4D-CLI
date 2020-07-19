@@ -3,7 +3,7 @@
  */
 let path = require('path');
 let fs = require('fs');
-let logger = require('./logger');
+let logger = require('../util/logger');
 module.exports = function (tplcode, tplname) {
 	let projectDir = path.resolve('.'),
 		clidir = __dirname,

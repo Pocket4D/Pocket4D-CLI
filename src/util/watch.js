@@ -3,7 +3,7 @@ var path = require('path');
 var fs = require('fs');
 var net = require('net');
 const chalk = require('chalk');
-const parser = require('./parser');
+const parser = require('../parser/parser');
 
 function _getLocalIP() {
     const os = require('os');

@@ -4,12 +4,12 @@
  * node index.js c -e dev -d /Users/xxx/Documents/npm/demo
  * node index.js zip -p /Users/xxx/Documents/npm/demo
  */
-const start = require('./start');
-const zip = require('./zip');
+const start = require('./commands/start');
+const zip = require('./util/zip');
 const path = require('path');
-const createtemplate = require('./command-tpl');
-const watcher = require('./watch');
-const logger = require('./logger');
+const createtemplate = require('./generator/command-tpl');
+const watcher = require('./util/watch');
+const logger = require('./util/logger');
 
 const argv = require('yargs')
 	.command(
@@ -102,7 +102,7 @@ const argv = require('yargs')
 (function () {
 	if (argv.v) {
 		//查看版本号
-		let json = require('./package.json');
+		let json = require('../package.json');
 		console.log(json.version);
 	}
 })();

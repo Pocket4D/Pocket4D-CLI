@@ -1,12 +1,12 @@
 /**
  * webpack打包   ->模板编译成json
  */
-const parser = require('./parser');
+const parser = require('../parser/parser');
 const pwpackage = require('./wppackage');
 const chalk = require('chalk')
 const fs = require('fs')
 const path = require('path')
-const watcher = require('./watch')
+const watcher = require('../util/watch')
 
 module.exports = async function (argv) {
     if (argv.e && argv.e === 'dev') {
