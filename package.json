@@ -6,12 +6,12 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch:wp": "webpack --watch --mode production --config webpack.prod.js",
-		"watch:cc": "node src/index.js watch",
+		"watch:cc": "node src/index.ts watch",
 		"start": "npm-run-all --parallel watch:cc watch:wp",
 		"build": "webpack --config webpack.prod.js"
 	},
 	"dependencies": {
-		"@babel/core": "^7.4.3",
+		"@babel/core": "^7.11.1",
 		"@babel/preset-env": "^7.4.3",
 		"@harmony-js/core": "^0.1.36",
 		"adm-zip": "^0.4.13",
@@ -22,13 +22,14 @@
 		"clean-webpack-plugin": "^2.0.1",
 		"css-loader": "^2.1.1",
 		"file-loader": "^3.0.1",
-		"htmlparser2": "^3.10.1",
+		"htmlparser2": "^4.1.0",
 		"node-watch": "^0.6.0",
 		"npm-run-all": "^4.1.5",
 		"ora": "^3.2.0",
 		"shady-css-parser": "^0.1.0",
 		"shelljs": "^0.8.3",
 		"style-loader": "^0.23.1",
+		"typescript": "^3.9.7",
 		"webpack": "^4.27.1",
 		"webpack-cli": "^3.1.2",
 		"webpack-dev-server": "^3.2.1",
@@ -36,5 +37,12 @@
 		"webpack-shell-plugin": "^0.5.0",
 		"xml-loader": "^1.2.1",
 		"yargs": "^13.2.2"
+	},
+	"devDependencies": {
+		"@types/adm-zip": "^0.4.33",
+		"@types/babel__core": "^7.1.9",
+		"@types/node": "^14.0.27",
+		"@types/yargs": "^15.0.5",
+		"prettier": "^2.0.5"
 	}
 }

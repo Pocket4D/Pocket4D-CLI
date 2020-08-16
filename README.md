@@ -16,7 +16,7 @@ npm install
 ```
 2. 创建模板
 ```
-node index.js tpl -n example -c example
+node index.ts tpl -n example -c example
 -n 页面名字
 -c 页面编号
 ```
