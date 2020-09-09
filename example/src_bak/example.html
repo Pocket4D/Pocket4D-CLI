@@ -1,78 +1,76 @@
 <!DOCTYPE html>
-<html lang="en" html-identify="PD">
+<html lang="en" html-identify="P4D">
+	<head>
+		<meta charset="UTF-8" />
+		<style type="text/css" media="screen">
+			@import 'example.css';
+		</style>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <style type="text/css" media="screen">
-        @import "example.css";
-    </style>
-</head>
-
-<body>
-    <singlechildscrollview>
-        <column>
-            <container id="item-container">
-                <row>
-                    <text>pd.setNavigationBarTitle</text>
-                    <expanded><text></text></expanded>
-                    <raisedbutton style="color: green;" onclick="setNavigationBarTitle">
-                        <text style="font-size: 14px;color: white;">设置标题</text>
-                    </raisedbutton>
-                </row>
-            </container>
-            <container id="item-container">
-                <row>
-                    <text>pd.setNavigationBarColor</text>
-                    <expanded><text></text></expanded>
-                    <raisedbutton style="color: red;" onclick="setNavigationBarColor">
-                        <text style="font-size: 14px;color: white;">设置颜色</text>
-                    </raisedbutton>
-                </row>
-            </container>
-            <container id="item-container">
-                <row>
-                    <text>pd.setBackgroundColor</text>
-                    <expanded><text></text></expanded>
-                    <raisedbutton style="color: blue;" onclick="setBackgroundColor">
-                        <text style="font-size: 14px;color: white;">设置背景</text>
-                    </raisedbutton>
-                </row>
-            </container>
-            <container id="item-container">
-                <row>
-                    <text>pd.showToast</text>
-                    <expanded><text></text></expanded>
-                    <raisedbutton style="color: yellow;" onclick="showToast">
-                        <text style="font-size: 14px;color: white;">Toast</text>
-                    </raisedbutton>
-                </row>
-            </container>
-            <container id="item-container">
-                <row>
-                    <column>
-                        <text>pd.showLoading</text>
-                        <text>pd.hideLoading</text>
-                    </column>
-                    <expanded><text></text></expanded> 
-                    <raisedbutton style="color: green;" onclick="showLoading">
-                        <text style="font-size: 14px;color: white;">Loading</text>
-                    </raisedbutton>
-                </row>
-            </container>
-            <container id="item-container">
-                <row>
-                    <column>
-                        <text>pd.startPullDownRefresh</text>
-                        <text>pd.stopPullDownRefresh</text>
-                    </column>
-                    <expanded><text></text></expanded> 
-                    <raisedbutton style="color: red;" onclick="startPullDownRefresh">
-                        <text style="font-size: 14px;color: white;">start</text>
-                    </raisedbutton>
-                </row>
-            </container>
-        </column>
-    </singlechildscrollview> 
-</body>
-
+	<body>
+		<singlechildscrollview>
+			<column>
+				<container id="item-container">
+					<row>
+						<text>p4d.setNavigationBarTitle</text>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: green" onclick="setNavigationBarTitle">
+							<text style="font-size: 14px; color: white">设置标题</text>
+						</raisedbutton>
+					</row>
+				</container>
+				<container id="item-container">
+					<row>
+						<text>p4d.setNavigationBarColor</text>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: red" onclick="setNavigationBarColor">
+							<text style="font-size: 14px; color: white">设置颜色</text>
+						</raisedbutton>
+					</row>
+				</container>
+				<container id="item-container">
+					<row>
+						<text>p4d.setBackgroundColor</text>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: blue" onclick="setBackgroundColor">
+							<text style="font-size: 14px; color: white">设置背景</text>
+						</raisedbutton>
+					</row>
+				</container>
+				<container id="item-container">
+					<row>
+						<text>p4d.showToast</text>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: yellow" onclick="showToast">
+							<text style="font-size: 14px; color: white">Toast</text>
+						</raisedbutton>
+					</row>
+				</container>
+				<container id="item-container">
+					<row>
+						<column>
+							<text>p4d.showLoading</text>
+							<text>p4d.hideLoading</text>
+						</column>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: green" onclick="showLoading">
+							<text style="font-size: 14px; color: white">Loading</text>
+						</raisedbutton>
+					</row>
+				</container>
+				<container id="item-container">
+					<row>
+						<column>
+							<text>p4d.startPullDownRefresh</text>
+							<text>p4d.stopPullDownRefresh</text>
+						</column>
+						<expanded><text></text></expanded>
+						<raisedbutton style="color: red" onclick="startPullDownRefresh">
+							<text style="font-size: 14px; color: white">start</text>
+						</raisedbutton>
+					</row>
+				</container>
+			</column>
+		</singlechildscrollview>
+	</body>
 </html>

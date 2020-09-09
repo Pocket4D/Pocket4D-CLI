@@ -1,8 +1,8 @@
-var chalk = require("chalk");
-var format = require("util").format;
+var chalk = require('chalk');
+var format = require('util').format;
 
-const PREFIX = "   pd-cli";
-const SEP = chalk.gray("·");
+const PREFIX = '   p4d-cli';
+const SEP = chalk.gray('·');
 
 /**
  * Log a `message` to the console.
@@ -11,8 +11,8 @@ const SEP = chalk.gray("·");
  */
 
 export const log = (msg: string) => {
-  const formatted = format.apply(format, msg);
-  console.log(chalk.white(PREFIX), SEP, formatted);
+	const formatted = format.apply(format, msg);
+	console.log(chalk.white(PREFIX), SEP, formatted);
 };
 
 /**
@@ -22,9 +22,9 @@ export const log = (msg: string) => {
  */
 
 export const fatal = (msg: string) => {
-  const formatted = format.apply(format, msg.trim());
-  console.error(chalk.red(PREFIX), SEP, msg);
-  process.exit(1);
+	const formatted = format.apply(format, msg.trim());
+	console.error(chalk.red(PREFIX), SEP, msg);
+	process.exit(1);
 };
 
 /**
@@ -34,6 +34,6 @@ export const fatal = (msg: string) => {
  */
 
 export const success = (msg: string) => {
-  const formatted = format.apply(format, msg);
-  console.log(chalk.green(PREFIX), SEP, formatted);
+	const formatted = format.apply(format, msg);
+	console.log(chalk.green(PREFIX), SEP, formatted);
 };

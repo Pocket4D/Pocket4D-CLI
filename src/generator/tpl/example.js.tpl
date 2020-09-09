@@ -15,7 +15,7 @@ Page({
     },
 
     /**
-    * 页面卸载时触发。如cc.redirectTo或cc.navigateBack到其他页面时。
+    * 页面卸载时触发。如p4d.redirectTo或p4d.navigateBack到其他页面时。
     */
     onUnload() {
 

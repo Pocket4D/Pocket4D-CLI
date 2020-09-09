@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" html-identify="PD">
+<html lang="en" html-identify="P4D">
+	<head>
+		<meta charset="UTF-8" />
+		<style type="text/css" media="screen">
+			@import 'for.css';
+		</style>
+	</head>
 
-<head>
-    <meta charset="UTF-8" />
-    <style type="text/css" media="screen">
-        @import "for.css";
-    </style>
-</head>
-
-<body>
-    <Row >
-        <Container pd:for="{{list}}" style="width: 100px; height:100px; color: green; margin-right: 15px;">
-            <text style="font-size: 14px;color: white;">{{'id:' + index + ' text:' + item}}</text>
-        </Container>
-    </Row>
-</body>
-
+	<body>
+		<Row>
+			<Container
+				p4d:for="{{list}}"
+				style="width: 100px; height: 100px; color: green; margin-right: 15px"
+			>
+				<text style="font-size: 14px; color: white">{{'id:' + index + ' text:' + item}}</text>
+			</Container>
+		</Row>
+	</body>
 </html>

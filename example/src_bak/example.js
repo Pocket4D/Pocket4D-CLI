@@ -10,7 +10,7 @@ Page({
 	},
 	setNavigationBarTitle() {
 		this.data.count++;
-		pd.setNavigationBarTitle({
+		p4d.setNavigationBarTitle({
 			title: '设置标题' + this.data.count,
 		});
 	},
@@ -22,7 +22,7 @@ Page({
 			this.data.random = 0;
 		}
 		let color = this.data.colors[this.data.random];
-		pd.setNavigationBarColor({
+		p4d.setNavigationBarColor({
 			backgroundColor: color,
 		});
 	},
@@ -32,21 +32,21 @@ Page({
 			this.data.random = 0;
 		}
 		let color = this.data.backgroundColors[this.data.random];
-		pd.setBackgroundColor({
+		p4d.setBackgroundColor({
 			backgroundColor: color,
 		});
 	},
 	showToast() {
-		pd.showToast({
+		p4d.showToast({
 			title: "I'm toast!",
 		});
 	},
 	showLoading() {
-		pd.showLoading({});
+		p4d.showLoading({});
 		var timerId = setTimeout(
 			function (...args) {
 				console.log(JSON.stringify(...args));
-				pd.hideLoading();
+				p4d.hideLoading();
 			},
 			3000,
 			'1',
@@ -55,7 +55,7 @@ Page({
 		console.log('timerId = ' + timerId);
 	},
 	startPullDownRefresh() {
-		pd.startPullDownRefresh();
+		p4d.startPullDownRefresh();
 	},
 	onclick() {
 		// let name = "cms"
@@ -66,7 +66,7 @@ Page({
 		// let btnColor = this.data.colors[random];
 		// this.setData({ name, width, height, btnColor });
 		// let that = this;
-		// pd.request({
+		// p4d.request({
 		//     url: 'https://www.easy-mock.com/mock/5ab46236e1c17b3b2cc55843/example/items',
 		//     data: {},
 		//     header: {},
@@ -93,12 +93,12 @@ Page({
 	onPullDownRefresh() {
 		console.log('onPullDownRefresh');
 		setTimeout(function () {
-			pd.stopPullDownRefresh();
+			p4d.stopPullDownRefresh();
 		}, 3000);
 	},
 
 	/**
-	 * 页面卸载时触发。如pd.redirectTo或pd.navigateBack到其他页面时。
+	 * 页面卸载时触发。如p4d.redirectTo或p4d.navigateBack到其他页面时。
 	 */
 	onUnload() {},
 });
