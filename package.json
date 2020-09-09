@@ -1,13 +1,13 @@
 {
-	"name": "webpack-cc",
+	"name": "webpack-p4d",
 	"version": "1.0.0",
 	"description": "",
 	"private": true,
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"watch:wp": "webpack --watch --mode production --config webpack.prod.js",
-		"watch:cc": "node src/index.ts watch",
-		"start": "npm-run-all --parallel watch:cc watch:wp",
+		"watch:p4d": "node src/index.ts watch",
+		"start": "npm-run-all --parallel watch:p4d watch:wp",
 		"build": "webpack --config webpack.prod.js"
 	},
 	"dependencies": {
