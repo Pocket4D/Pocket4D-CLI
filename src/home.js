@@ -12,16 +12,16 @@ Page({
 	 * 页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。
 	 */
 	onLoad(e) {
-		pd.setNavigationBarTitle({
+		p4d.setNavigationBarTitle({
 			title: 'Python系列丛书',
 		});
-		pd.showLoading({});
+		p4d.showLoading({});
 		this.doRequest(true);
 	},
 
 	doRequest(isOnload) {
 		let that = this;
-		pd.request({
+		p4d.request({
 			url: 'http://47.107.46.220:10808/query', //'https://douban.uieee.com/v2/book/search?q=python',
 			data: {},
 			header: {},
@@ -30,30 +30,32 @@ Page({
 				that.setData({
 					list: response.body.books,
 				});
-				pd.showToast({
+				p4d.showToast({
 					title: '加载成功',
 				});
 			},
 			fail: function (error) {
 				console.log('request error:' + JSON.stringify(error));
-				pd.showToast({
+				p4d.showToast({
 					title: '加载失败',
 				});
 			},
 			complete: function () {
 				console.log('request complete');
 				if (isOnload) {
-					pd.hideLoading();
+					p4d.hideLoading();
 				} else {
-					pd.stopPullDownRefresh();
+					p4d.stopPullDownRefresh();
 				}
 			},
 		});
 	},
 
 	onItemClick(e) {
+		console.log(`onClick!`);
+		console.log(JSON.stringify(e));
 		var item = this.data.list[e.target.dataset.index];
-		pd.navigateTo({
+		p4d.navigateTo({
 			url: 'detail?item=' + JSON.stringify(item),
 		});
 	},
@@ -64,7 +66,7 @@ Page({
 	},
 
 	/**
-	 * 页面卸载时触发。如pd.redirectTo或pd.navigateBack到其他页面时。
+	 * 页面卸载时触发。如p4d.redirectTo或p4d.navigateBack到其他页面时。
 	 */
 	onUnload() {},
 });

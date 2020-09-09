@@ -5,7 +5,7 @@ var format = require('util').format;
  * Prefix.
  */
 
-var prefix = '   pd-cli';
+var prefix = '   p4d-cli';
 var sep = chalk.gray('·');
 
 /**

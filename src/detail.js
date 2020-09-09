@@ -15,7 +15,7 @@ Page({
 	 */
 	onLoad(e) {
 		var detail = JSON.parse(e.item);
-		pd.setNavigationBarTitle({
+		p4d.setNavigationBarTitle({
 			title: detail.title,
 		});
 		var catalogShort = detail.catalog;
@@ -46,7 +46,7 @@ Page({
 	},
 
 	/**
-	 * 页面卸载时触发。如pd.redirectTo或pd.navigateBack到其他页面时。
+	 * 页面卸载时触发。如p4d.redirectTo或p4d.navigateBack到其他页面时。
 	 */
 	onUnload() {},
 });
