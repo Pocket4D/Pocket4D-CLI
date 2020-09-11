@@ -13,7 +13,7 @@ Page({
 	 */
 	onLoad(e) {
 		p4d.setNavigationBarTitle({
-			title: 'Python系列丛书',
+			title: 'douban Python系列丛书',
 		});
 		p4d.showLoading({});
 		this.doRequest(true);
@@ -41,10 +41,12 @@ Page({
 				});
 			},
 			complete: function () {
-				console.log('request complete');
+				console.log(`request complete: isOnload ${isOnload}`);
 				if (isOnload) {
+					// conosle.log('hideLoading');
 					p4d.hideLoading();
 				} else {
+					// conosle.log('stopPullDownRefresh');
 					p4d.stopPullDownRefresh();
 				}
 			},

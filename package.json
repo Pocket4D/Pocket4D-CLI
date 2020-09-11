@@ -8,7 +8,7 @@
 		"watch:wp": "webpack --watch --mode production --config webpack.prod.js",
 		"watch:cc": "node ./index.js watch",
 		"start": "npm-run-all --parallel watch:cc watch:wp",
-		"build": "webpack --config webpack.prod.js"
+		"build": "webpack --config webpack.prod.js && node combineJson.js"
 	},
 	"dependencies": {
 		"@babel/core": "^7.4.3",
